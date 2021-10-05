@@ -9,14 +9,17 @@ body{
 }
 header{
 	padding: 50px;
-	background-color: white;
+	background-color: rgb(255, 251, 218);
 	text-align: center;
 }
 
 nav{
 	display: flex;
 	flex-direction: row;
-	background-color:white;
+	background-color:rgb(255, 251, 218);
+	padding: 10px;
+	
+	
 	
 }
 
@@ -39,20 +42,20 @@ nav a{
 
 aside{
 	flex: 30px;
-	background-color: beige;
+	background-color: rgb(236, 178, 145);
 	padding: 20px;
 }
 
 section{
 	flex: 70%;
-	background-color: khaki;
+	background-color: rgb(255, 251, 218);
 	padding: 20px;
 }
 
 footer{
 	padding: 20px;
 	text-align: center;
-	background-color: rgb(54, 77, 90);
+	background-color: rgb(26, 100, 20);
 	color: white;
 }
 
@@ -63,5 +66,20 @@ footer{
 }
 
 #img2{
-	margin-left: 1%;
+	margin-left: 32%;
+}
+
+#form{
+	margin-left: 45%;
+}
+
+a{
+	background-color: white;
+}
+
+p{
+	padding: 20px;
+	text-align: center;
+	border: 1px solid black;
+
 }

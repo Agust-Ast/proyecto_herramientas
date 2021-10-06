@@ -1,3 +1,4 @@
+<!----
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
    
 </head>
 <body>
-    <!--Tabla para colocar los botones de navegación-->
+    
     <table style="width: 100%;">
 
         <tr>
@@ -36,7 +37,7 @@
 
     </table> 
 
-     <!--Tabla para colocar el Banner-->
+    
      <table style="width: 100%;">
 
         <tr>
@@ -90,21 +91,95 @@
           
 
     </table> 
-    <!--Formulario-->
+
               
       
-    <hr><!--Línea horizontal para indicar el pie de página-->
-    <!--Tabla para el pie de página-->
-    <table style="width: 100%;"> 
-
-        <footer>
-            <p>© Agustín Astudillo 2021</p>
-        </footer> 
- 
-     </table>
-    
     
         
 </body>
 </html>
-<!--Página hecha por Agustín Astudillo-->
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home&#128293</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" id="boton1">Home</a>
+        <a href="nosotros.html" id="boton2">Nosotros</a>
+        <a  id="boton3">Contacto</a>
+        <a href="login.html" id="boton4">Login</a>
+    </nav>
+
+    <header>
+        <h1><img src="img/banner.png" width="600" height="200" alt="imagen banner"></h1>
+    </header>
+
+    
+
+    <div class="row">
+        <section>
+            <h2>
+                <form id="form2"> 
+                    <label>Dirección</label>
+                    <br>
+                    <input type="text"  name="direccion">
+                    <br>
+                    <br>
+                    <label>Fecha nacimiento</label>
+                    <br>
+                    <input type="date"  name="date">
+                    <br>
+                    <br>
+                    <label>Edad</label>
+                    <br>
+                    <input type="number"  name="edad" min="1" max="100">
+                    <br>
+                    <br>
+                    <label>Sexo</label>
+                    <br>
+                    <input type="radio"  name="sex" id="masculino">
+                    <label for="masculino">Masculino</label>
+                    <br>
+                    <input type="radio"  name="sex" id="femenino">
+                    <label for="femenino">Femenino</label>
+                    <br>
+                    <input type="radio"  name="sex" id="otro">
+                    <label for="otro">Otro</label>
+                    <br>
+                    <br>
+                    <label>Ciudad</label>
+                    <br>
+                    <input type="text"  name="ciudad">
+                    <br>
+                    <br>
+                    <input type="submit" value="Guardar">
+                    <br>
+                    <br>
+                    </form>
+            </h2>
+                
+        </section>
+    </div>
+
+    <footer>
+        <h5>© Agustín Astudillo 2021</h5>
+    </footer>
+
+    <style>
+
+        #boton4{
+	background-color: lightblue;
+}
+
+    </style>
+
+</body>
+</html>

@@ -55,7 +55,7 @@ section{
 footer{
 	padding: 20px;
 	text-align: center;
-	background-color: rgb(51, 107, 47);
+	background-color: rgb(96, 95, 78);
 	color: white;
 	border: solid black;
 }
@@ -75,18 +75,19 @@ footer{
 
 a{
 	background-color: white;
+	border: solid black;
 }
 
 .p_nosotros1{
 	padding: 20px;
 	text-align: center;
-	background-color: rgb(241, 241, 163);
+	background-color: rgb(223, 221, 181);
 	border: solid black;
 
 }
 
-form{
-	background-color: rgb(158, 230, 152);
+#form1{
+	background-color: rgb(191, 189, 155);
 	margin-left: 250px;
 	margin-right: 200px;
 	border: solid black;
@@ -103,7 +104,7 @@ label{
  .p_index{
 	padding: 20px;
 	text-align: justify;
-	background-color: rgb(248, 248, 186);
+	background-color: rgb(223, 221, 181);
 	border: solid black;
 
 }
@@ -117,8 +118,9 @@ label{
 
 .banner{
 	border: solid black;
+	padding: 1%;
+	background-color:rgb(255, 251, 218);
 }
-
 #video{
 	margin-left: 100px;
 }
@@ -126,7 +128,7 @@ label{
 .p_nosotros2{
 	
 	text-align: center;
-	background-color: rgb(241, 241, 163);
+	background-color: rgb(223, 221, 181);
 	border: solid black;
 
 }
@@ -137,4 +139,11 @@ label{
 	padding: 20px;
 	
 	
+}
+
+.texto{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	border: solid black;
+	background-color: rgb(223, 221, 181);
+	margin: 5%;
 }

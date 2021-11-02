@@ -12,7 +12,24 @@
 </head>
 
 <!--barra navegación-->
-<nav class="navbar navbar-expand-lg navbar-light bg-warning bg-opacity-10" >
+<div class="fixed-top"><nav class="navbar navbar-expand-lg navbar-light bg-dark" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">&#128293</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="btn btn-outline-warning" aria-current="page" href="index.html">Home</a>
+        <a class="btn btn-outline-warning" href="nosotros.html">Nosotros</a>
+        <a class="btn btn-outline-warning" href="#">Contacto</a>
+        <a class="btn btn-outline-warning" href="login.html">Login</a>
+      </div>
+    </div>
+  </div>
+</nav></div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark" >
   <div class="container-fluid">
     <a class="navbar-brand" href="#">&#128293</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,6 +45,7 @@
     </div>
   </div>
 </nav>
+
 
 
 
@@ -63,33 +81,60 @@
     </button>
   </div>
 
+ 
+
+ 
+
  <!----Tarjetas-->
  
- <div class="container">
+<div class="container "  id="a">
+  <h1>Noticias</h1>
+  <hr>
   <div class="row">
     <div class="col">
-      <div class="card" style="width: 18rem;">
-        <img src="img/noticia1.jpg" class="card-img-top" alt="..." height="">
+      <div class="card border-warning" style="width: 25rem;">
+        <img src="img/noticia1.jpg" class="card-img-top" alt="..." height="223.88px">
         <div class="card-body">
           <h5 class="card-title">Incendio forestal de Tiltil</h5>
           <p class="card-text">Alrededor de 15 casas quemadas y más de 400 hectáreas afectadas dejo el devastador incendio...</p>
+          <br>
+          <br>
+          <br>
           <a href="https://www.elmostrador.cl/dia/2021/09/30/un-dia-desde-el-incendio-forestal-de-tiltil-15-casas-quemadas-y-mas-de-400-hectareas-afectadas/" class="btn btn-warning">Ir a la noticia</a>
         </div>
       </div>
     </div>
     
     <div class="col">
-      <div class="card" style="width: 18rem;">
-        <img src="img/Alerta.jpeg" class="card-img-top" alt="..." height="160.88px">
+      <div class="card border-warning" style="width: 25rem;" >
+        <img src="img/Alerta.jpeg" class="card-img-top" alt="..." height="223.88px">
         <div class="card-body">
           <h5 class="card-title">Alerta amarilla</h5>
           <p class="card-text">El pasado domingo 24 de Octubre la ONEMI  decretó alerta amarilla para la comuna de Valparaíso...</p>
+          <br>
+          <br>
           <a href="https://www.latercera.com/nacional/noticia/onemi-decreta-alerta-amarilla-comunal-tras-incendio-forestal-en-laguna-verde/6DY4S4L5ZRHRZFIZL3M5LQ36OI/" class="btn btn-warning">Ir a la noticia</a>
         </div>
       </div>
     </div>
+
+    <div class="col">
+      <div class="card border-warning" style="width: 25rem;">
+        <img src="img/noticia3.jpg" class="card-img-top" alt="..." height="223.88px">
+        <div class="card-body">
+          <h5 class="card-title">Atacama se prepara para la temporada de incendios 2021 – 2022</h5>
+          <p class="card-text">El pasado jueves 30 de septiembre, se dio a conocer el Plan de Prevención, Control y Combate de los Incendios Forestales en la región de Atacama 2021 – 2022.</p>
+          <a href="https://www.nostalgica.cl/atacama-se-prepara-para-la-temporada-de-incendios-2021-2022/" class="btn btn-warning">Ir a la noticia</a>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <hr>
 </div>
+
+
+
   <br>
   <!----Heroe-->
 
@@ -102,11 +147,12 @@
         </p>
       </div>
     </div>
+    
   </div>
   
+<br>
 
-
-<div class="container  border-top border-primary " style="max-width: 500px" id="contenedor-formulario">
+<div class="container   " style="max-width: 500px" id="contenedor-formulario ">
   <div class="text-center mb-4">
     <div><img src="img/mensaje.gif" alt="" class="img-fluid ps-5" ></div>
     <h2>¿Queres dejar un mensaje o sugerencia?</h2>

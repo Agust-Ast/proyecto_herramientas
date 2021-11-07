@@ -82,7 +82,11 @@
                   </div>
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Apellidos:</label>
-                    <input type="text" class="form-control" id="Apellidos" name="apellidos">
+                    <input type="text" class="form-control" id="apellidos" name="apellidos">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">RUT/DNI:</label>
+                    <input type="text" class="form-control" id="rut" name="rut">
                   </div>
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Usuario:</label>
@@ -101,19 +105,19 @@
                     <label for="flexRadioDefault1" class="form-label">Sexo:</label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio"  id="sexo" name="sexo">
+                    <input class="form-check-input" type="radio"  id="sexo" name="sexo" value="Masculino">
                     <label class="form-check-label" for="flexRadioDefault1">
                       Masculino
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio"  id="sexo" name="sexo">
+                    <input class="form-check-input" type="radio"  id="sexo" name="sexo" value="Femenino">
                     <label class="form-check-label" for="flexRadioDefault1">
                       Femenino
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio"  id="sexo" name="sexo">
+                    <input class="form-check-input" type="radio"  id="sexo" name="sexo" value="Otro">
                     <label class="form-check-label" for="flexRadioDefault1">
                       Otro
                     </label>
@@ -135,8 +139,8 @@
                
             
 
-                <!-- Boton para que se pueda mostrar la ventanita -->
-          <input type="submit" class="btn btn-warning">
+               
+          <input type="submit" class="btn btn-warning" value="Crear/Guardar">
             
  
               </form>

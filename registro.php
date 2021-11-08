@@ -5,7 +5,6 @@
     $sql="SELECT *  FROM formulario";
     $query=mysqli_query($con,$sql);
 
-    $row=mysqli_fetch_array($query);
 ?>
 
 <!DOCTYPE html>
@@ -45,9 +44,6 @@
 
 <style>
 
-  body{
-    background-color: rgb(255, 255, 255);
-  }
 
   #carouselExampleIndicators{
     margin: 2%;
@@ -137,20 +133,60 @@
                 </div>
               
                
-            
-
-               
-          <input type="submit" class="btn btn-warning" value="Crear/Guardar">
+            <input type="submit" class="btn btn-warning" value="Crear/Guardar">
             
  
               </form>
           </div>
         
         </div>
-      </div>
+
+        </div>
       <br>
+
+      <table class="table">
+  <thead class="table-warning">
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellidos</th>
+      <th scope="col">RUT</th>
+      <th scope="col">Usuario</th>
+      <th scope="col">Dirección</th>
+      <th scope="col">Sexo</th>
+      <th scope="col">Fecha nacimiento</th>
+      <th scope="col">Edad</th>
+      <th scope="col">E-mail</th>
+      <th></th>
+      <th></th>
+      
+    </tr>
+  </thead>
+  <tbody>
+  <?php
+                                            while($row=mysqli_fetch_array($query)){
+                                        ?>
+                                            <tr>
+                                                <th><?php  echo $row['nombre']?></th>
+                                                <th><?php  echo $row['apellidos']?></th>
+                                                <th><?php  echo $row['rut']?></th>
+                                                <th><?php  echo $row['usuario']?></th>
+                                                <th><?php  echo $row['direccion']?></th>
+                                                <th><?php  echo $row['sexo']?></th> 
+                                                <th><?php  echo $row['nacimiento']?></th>
+                                                <th><?php  echo $row['edad']?></th>                                                
+                                                <th><?php  echo $row['email']?></th> 
+                                                    
+                                                <th><a href="actualizar.php?id=<?php echo $row['cod_estudiante'] ?>" class="btn btn-info">Editar</a></th>
+                                                <th><a href="delete.php?id=<?php echo $row['rut'] ?>" class="btn btn-danger">Borrar/Eliminar</a></th>                                        
+                                            </tr>
+                                        <?php 
+                                            }
+                                        ?>
+  </tbody>
+</table>
+      
   
-  <!-- Footer-->
+      <!-- Footer-->
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">

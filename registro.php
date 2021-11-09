@@ -74,7 +74,7 @@
             <form action="insertar.php" method="POST">
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Nombre:</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre">
+                    <input type="text" class="form-control" id="nombre" n>
                   </div>
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Apellidos:</label>
@@ -176,7 +176,7 @@
                                                 <th><?php  echo $row['edad']?></th>                                                
                                                 <th><?php  echo $row['email']?></th> 
                                                     
-                                                <th><a href="actualizar.php?id=<?php echo $row['cod_estudiante'] ?>" class="btn btn-info">Editar</a></th>
+                                                <th><a href="actualizar.php?id=<?php echo $row['rut'] ?>" class="btn btn-info">Editar</a></th>
                                                 <th><a href="delete.php?id=<?php echo $row['rut'] ?>" class="btn btn-danger">Borrar/Eliminar</a></th>                                        
                                             </tr>
                                         <?php 

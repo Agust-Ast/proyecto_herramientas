@@ -42,17 +42,7 @@
 
 
 
-<style>
 
-
-  #carouselExampleIndicators{
-    margin: 2%;
-  }
-
-
-  
-  
-</style>
 
 
 
@@ -134,7 +124,7 @@
  
               </form>
               <br>
-              <a href="buscar.php" class="btn btn-warning">Buscar</a>
+              <a href="buscar.php" class="btn btn-warning">Leer/Buscar</a>
           </div>
         
         </div>
@@ -143,10 +133,10 @@
       <br>
 
 
-      <div class="container">
+      <div class="container border-primary shadow p-3 mb-5 bg-body rounded" >
   <div class="row">
     <div class="col">
-    <table class="table">
+    <table class="table " >
   <thead class="table-warning">
     <tr>
       <th scope="col">Nombre</th>
@@ -179,7 +169,7 @@
                                                 <th><?php  echo $row['email']?></th> 
                                                     
                                                 <th><a href="actualizar.php?id=<?php echo $row['rut'] ?>" class="btn btn-warning">Actualizar/Modificar</a></th>
-                                                <th><a href="delete.php?id=<?php echo $row['rut'] ?>" class="btn btn-danger">Borrar/Eliminar</a></th>                                        
+                                                <th><a href="delete.php?id=<?php echo $row['rut'] ?>" class="btn btn-danger">Borrar</a></th>                                        
                                             </tr>
                                         <?php 
                                             }

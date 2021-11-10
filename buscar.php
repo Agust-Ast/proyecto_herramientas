@@ -16,7 +16,7 @@ $row=mysqli_fetch_array($query);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Buscar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/footers/">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -47,7 +47,7 @@ $row=mysqli_fetch_array($query);
 
    
 
-<div class="container">
+<div class="container border-primary shadow p-3 mb-5 bg-body rounded">
     <div class="row">
         <div class="col">
             
@@ -56,7 +56,9 @@ $row=mysqli_fetch_array($query);
                     <input type="text" class="form-control" id="nombre" name="busqueda" placeholder="INGRESE RUT PARA BUSCAR">
                   </div>
         <br>
-        <input class="btn btn-warning" type="submit" name="enviar" value="Buscar">
+        <input class="btn btn-warning" type="submit" name="enviar" value="Leer/Buscar">
+        <br>
+        <br>
     </form> 
         <table class="table">
   <thead class="table-warning">

@@ -67,7 +67,7 @@
                     <input type="text" class="form-control" id="apellidos" name="apellidos">
                   </div>
                   <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">RUT/DNI:</label>
+                    <label for="exampleInputPassword1" class="form-label">RUT:</label>
                     <input type="text" class="form-control" id="rut" name="rut">
                   </div>
                   <div class="mb-3">
@@ -119,12 +119,12 @@
                 </div>
               
                
-            <input type="submit" class="btn btn-warning" value="Crear/Guardar">
+            <input type="submit" class="btn btn-warning" value="Guardar">
             
  
               </form>
               <br>
-              <a href="buscar.php" class="btn btn-warning">Leer/Buscar</a>
+              <a href="buscar.php" class="btn btn-warning">Buscar</a>
           </div>
         
         </div>
@@ -168,8 +168,8 @@
                                                 <th><?php  echo $row['edad']?></th>                                                
                                                 <th><?php  echo $row['email']?></th> 
                                                     
-                                                <th><a href="actualizar.php?id=<?php echo $row['rut'] ?>" class="btn btn-warning">Actualizar/Modificar</a></th>
-                                                <th><a href="delete.php?id=<?php echo $row['rut'] ?>" class="btn btn-danger">Borrar</a></th>                                        
+                                                <th><a href="actualizar.php?id=<?php echo $row['ID'] ?>" class="btn btn-warning">Modificar</a></th>
+                                                <th><a href="delete.php?id=<?php echo $row['ID'] ?>" class="btn btn-danger">Borrar</a></th>                                        
                                             </tr>
                                         <?php 
                                             }

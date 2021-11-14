@@ -3,10 +3,10 @@
 include("conexion.php");
 $con=conectar();
 
-$rut=$_GET['id'];
+$ID=$_GET['id'];
 
 
-$sql="DELETE FROM formulario  WHERE rut='$rut'";
+$sql="DELETE FROM formulario  WHERE ID='$ID'";
 $query=mysqli_query($con,$sql);
 
     if($query){

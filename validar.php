@@ -15,14 +15,13 @@ $filas=mysqli_num_rows($resultado);
 
 if($filas){
   
-    header("Location: index.html");
+    header("Location: home.html");
 
 }else{
     ?>
     <?php
-    include("login.php");
+    include("index.php");
 
   ?>
-  <h1 class="bad">ERROR DE AUTENTIFICACION</h1>
   <?php
 }

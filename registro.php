@@ -76,7 +76,7 @@
                   </div> 
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
-                    <input type="password" class="form-control" id="contraseña" name=contraseña>
+                    <input type="password" class="form-control" id="contraseña" name="contraseña">
                   </div>
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Dirección:</label>

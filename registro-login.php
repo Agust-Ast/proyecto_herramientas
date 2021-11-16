@@ -19,25 +19,7 @@
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<!--barra navegación-->
-<div class="fixed-top"><nav class="navbar navbar-expand-lg navbar-light bg-dark" >
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">&#128293</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="btn btn-outline-warning" aria-current="page" href="home.html">Home</a>
-        <a class="btn btn-outline-warning" href="nosotros.html">Nosotros</a>
-        <a class="btn btn-outline-warning" href="#">Contacto</a>
-        <a class="btn btn-outline-warning" href="registro.php">Login</a>
-      </div>
-    </div>
-  </div>
-</nav></div>
 
-<br><br>
 
 
 
@@ -59,7 +41,7 @@
     <div class="container border-primary shadow p-3 mb-5 bg-body rounded">
         <div class="row">
           <div class="col">
-            <form action="insertar.php" method="POST">
+            <form action="insertar-login.php" method="POST">
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Nombre:</label>
                     <input type="text" class="form-control" id="nombre" name="nombre">
@@ -121,66 +103,17 @@
                 </div>
               
                
-            <input type="submit" class="btn btn-warning" value="Guardar">
+            <input  type="submit" class="btn btn-warning" value="Registrarse">
             
  
               </form>
               <br>
-              <a href="buscar.php" class="btn btn-warning">Buscar</a>
           </div>
         
         </div>
 
         </div>
       <br>
-
-
-      <div class="container border-primary shadow p-3 mb-5 bg-body rounded" >
-  <div class="row">
-    <div class="col">
-    <table class="table " >
-  <thead class="table-warning">
-    <tr>
-      <th scope="col">Nombre</th>
-      <th scope="col">Apellidos</th>
-      <th scope="col">RUT</th>
-      <th scope="col">Usuario</th>
-      <th scope="col">Dirección</th>
-      <th scope="col">Sexo</th>
-      <th scope="col">Fecha nacimiento</th>
-      <th scope="col">Edad</th>
-      <th scope="col">E-mail</th>
-      <th></th>
-      <th></th>
-      
-    </tr>
-  </thead>
-  <tbody>
-  <?php
-                                            while($row=mysqli_fetch_array($query)){
-                                        ?>
-                                            <tr>
-                                                <th><?php  echo $row['nombre']?></th>
-                                                <th><?php  echo $row['apellidos']?></th>
-                                                <th><?php  echo $row['rut']?></th>
-                                                <th><?php  echo $row['usuario']?></th>
-                                                <th><?php  echo $row['direccion']?></th>
-                                                <th><?php  echo $row['sexo']?></th> 
-                                                <th><?php  echo $row['nacimiento']?></th>
-                                                <th><?php  echo $row['edad']?></th>                                                
-                                                <th><?php  echo $row['email']?></th> 
-                                                    
-                                                <th><a href="actualizar.php?id=<?php echo $row['ID'] ?>" class="btn btn-warning">Modificar</a></th>
-                                                <th><a href="delete.php?id=<?php echo $row['ID'] ?>" class="btn btn-danger">Borrar</a></th>                                        
-                                            </tr>
-                                        <?php 
-                                            }
-                                        ?>
-  </tbody>
-</table>
-    </div>
-  </div>
-</div>
 
 
     

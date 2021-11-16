@@ -30,15 +30,16 @@
           font-size: 3.5rem;
         }
       }
+     
     </style>
 
     
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
   </head>
-  <body class="text-center">
+  <body class="text-center  bg-transparent"  >
     
-<main class="form-signin">
+<main class="form-signin ">
   <form action="validar.php" method="get">
   &#128293
     <h1 class="h3 mb-3 fw-normal">Iniciar sesión</h1>
@@ -48,12 +49,13 @@
       <label for="floatingInput">Email</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Password">
+      <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Contraseña">
       <label for="floatingPassword">Contraseña</label>
     </div>
 
     
-    <input class="w-100 btn btn-lg btn-warning" type="submit" value="entrar">
+    <input class="w-100 btn btn-lg btn-outline-warning" type="submit" value="Entrar">
+    <a class="w-100 btn btn-lg btn-outline-warning" href="registro-login.php">Crear cuenta</a>
     <p class="mt-5 mb-3 text-muted">&copy;2021 Agustín Astudillo.</p>
   </form>
 </main>

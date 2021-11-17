@@ -30,8 +30,8 @@
       <div class="navbar-nav">
         <a class="btn btn-outline-warning" aria-current="page" href="home.html">Home</a>
         <a class="btn btn-outline-warning" href="nosotros.html">Nosotros</a>
-        <a class="btn btn-outline-warning" href="#">Contacto</a>
-        <a class="btn btn-outline-warning" href="registro.php">Login</a>
+        <a class="btn btn-outline-warning" href="registro.php">Registro</a>
+        <a class="btn btn-outline-warning" href="index.php">Salir</a>
       </div>
     </div>
   </div>

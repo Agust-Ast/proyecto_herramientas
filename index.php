@@ -40,8 +40,8 @@
   <body class="text-center  bg-transparent"  >
     
 <main class="form-signin ">
-  <form action="validar.php" method="get">
-  &#128293
+  <form action="validar.php" method="get" >
+  <img class="mb-4" src="img/login.jpg" alt="" width="70" height="70">
     <h1 class="h3 mb-3 fw-normal">Iniciar sesión</h1>
 
     <div class="form-floating">
@@ -56,6 +56,9 @@
     
     <input class="w-100 btn btn-lg btn-outline-warning" type="submit" value="Entrar">
     <a class="w-100 btn btn-lg btn-outline-warning" href="registro-login.php">Crear cuenta</a>
+    <br> <br>
+    <a class=" btn btn-warning" href="recuperar.php">Recuperar contraseña</a>
+
     <p class="mt-5 mb-3 text-muted">&copy;2021 Agustín Astudillo.</p>
   </form>
 </main>

@@ -32,9 +32,12 @@
       }
      
     </style>
-
+<div class="container">
+  <div class="row">
     
-    <!-- Custom styles for this template -->
+   
+    <div class="col">
+       <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
   </head>
   <body class="text-center  bg-transparent"  >
@@ -59,9 +62,17 @@
     <br> <br>
     <a class=" btn btn-warning" href="recuperar.php">Recuperar contraseña</a>
 
-    <p class="mt-5 mb-3 text-muted">&copy;2021 Agustín Astudillo.</p>
   </form>
 </main>
+    </div>
+      
+
+
+  </div>
+  
+</div>
+    
+   
 
 
     
